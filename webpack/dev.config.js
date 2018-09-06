@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const autoprefixer = require('autoprefixer');
 
 const host = 'localhost';
 const port = 3000;
@@ -52,18 +51,6 @@ const baseDevConfig = () => ({
       options: {
         presets: ['react-hmre']
       }
-    }, {
-      test: /\.css$/,
-      use: [
-        'style-loader',
-        'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
-        {
-          loader: 'postcss-loader',
-          options: {
-            plugins: () => [autoprefixer]
-          }
-        }
-      ]
     }]
   }
 });

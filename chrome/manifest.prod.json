@@ -18,5 +18,5 @@
     "page": "background.html"
   },
   "permissions": [ "contextMenus", "tabs", "storage", "https://github.com/*" ],
-  "content_security_policy": "default-src 'self'; script-src 'self'; connect-src https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration; style-src * 'unsafe-inline'; img-src 'self' data:;"
+  "content_security_policy": "default-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; script-src 'self'; connect-src https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration; style-src * 'unsafe-inline'; img-src 'self' data:;"
 }

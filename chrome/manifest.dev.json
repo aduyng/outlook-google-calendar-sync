@@ -18,5 +18,5 @@
     "page": "background.html"
   },
   "permissions": [ "contextMenus", "management", "tabs", "storage", "https://github.com/*" ],
-  "content_security_policy": "default-src 'self'; script-src 'self' http://localhost:3000 https://localhost:3000 'unsafe-eval'; connect-src http://localhost:3000 https://localhost:3000 https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration; style-src * 'unsafe-inline' 'self' blob:; img-src 'self' data:;"
+  "content_security_policy": "default-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com/; script-src 'self' http://localhost:3000 https://localhost:3000 'unsafe-eval'; connect-src http://localhost:3000 https://localhost:3000 https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration; style-src * 'unsafe-inline' 'self' blob:; img-src 'self' data:;"
 }
